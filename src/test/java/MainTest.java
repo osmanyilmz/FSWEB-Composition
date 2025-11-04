@@ -132,10 +132,10 @@ public class MainTest {
         System.setOut(new PrintStream(out));
 
         wardrobe.add();
-        assertThat(out.toString(), containsString("Wardrobe added into Bedroom."));
+        assertThat(out.toString(), containsString("Wardrobe added into org.example.model.Bedroom."));
     }
 
-    @DisplayName("Carpet sınıf değişkenleri doğru access modifier değerlerine sahip mi ?")
+    @DisplayName("org.example.model.Carpet sınıf değişkenleri doğru access modifier değerlerine sahip mi ?")
     @Test
     public void testCarpetAccessModifiers() throws NoSuchFieldException {
         Field colorField = carpet.getClass().getDeclaredField("color");
@@ -147,7 +147,7 @@ public class MainTest {
         assertEquals(heightField.getModifiers(), 2);
     }
 
-    @DisplayName("Carpet sınıf değişkenleri doğru type değerlerine sahip mi ?")
+    @DisplayName("org.example.model.Carpet sınıf değişkenleri doğru type değerlerine sahip mi ?")
     @Test
     public void testCarpetInstanceTypes() throws NoSuchFieldException {
         assertThat(carpet.getColor(), instanceOf(PaintColor.class));
@@ -155,7 +155,7 @@ public class MainTest {
         assertThat(carpet.getHeight(), instanceOf(Integer.class));
     }
 
-    @DisplayName("Carpet lying methodu doğru çalışıyor mu?")
+    @DisplayName("org.example.model.Carpet lying methodu doğru çalışıyor mu?")
     @Test
     public void testCarpetLyingMethod() throws NoSuchFieldException {
         PrintStream saveOut = System.out;
@@ -163,10 +163,10 @@ public class MainTest {
         System.setOut(new PrintStream(out));
 
         carpet.lying();
-        assertThat(out.toString(), containsString("Carpet is lying on Bedroom floor."));
+        assertThat(out.toString(), containsString("org.example.model.Carpet is lying on org.example.model.Bedroom floor."));
     }
 
-    @DisplayName("Ceiling sınıf değişkenleri doğru access modifier değerlerine sahip mi ?")
+    @DisplayName("org.example.model.Ceiling sınıf değişkenleri doğru access modifier değerlerine sahip mi ?")
     @Test
     public void testCeilingAccessModifiers() throws NoSuchFieldException {
         Field colorField = ceiling.getClass().getDeclaredField("color");
@@ -176,14 +176,14 @@ public class MainTest {
         assertEquals(heightField.getModifiers(), 2);
     }
 
-    @DisplayName("Ceiling sınıf değişkenleri doğru type değerlerine sahip mi ?")
+    @DisplayName("org.example.model.Ceiling sınıf değişkenleri doğru type değerlerine sahip mi ?")
     @Test
     public void testCeilingInstanceTypes() throws NoSuchFieldException {
         assertThat(ceiling.getColor(), instanceOf(PaintColor.class));
         assertThat(ceiling.getHeight(), instanceOf(Integer.class));
     }
 
-    @DisplayName("Ceiling create methodu doğru çalışıyor mu?")
+    @DisplayName("org.example.model.Ceiling create methodu doğru çalışıyor mu?")
     @Test
     public void testCeilingCreateMethod() throws NoSuchFieldException {
         PrintStream saveOut = System.out;
@@ -191,7 +191,7 @@ public class MainTest {
         System.setOut(new PrintStream(out));
 
         ceiling.create();
-        assertThat(out.toString(), containsString("Ceiling has been built."));
+        assertThat(out.toString(), containsString("org.example.model.Ceiling has been built."));
     }
 
     @DisplayName("Wall sınıf değişkenleri doğru access modifier değerlerine sahip mi ?")

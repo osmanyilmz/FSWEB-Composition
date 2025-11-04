@@ -27,3 +27,20 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+target/classes/org/example/Main.class
+target/classes/org/example/model/Bed.class
+target/classes/org/example/model/Ceiling.class
+target/classes/org/example/model/Carpet.class
+target/classes/org/example/model/Bedroom.class
+target/classes/org/example/model/Lamp.class
+target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
+target/test-classes/ResultAnalyzer.class
+target/test-classes/ResultAnalyzer$TestResultStatus.class
+target/test-classes/MainTest.class
+target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst
+target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+target/classes/org/example/model/Wardrobe.class
+target/classes/org/example/model/enums/PaintColor.class
+target/classes/org/example/model/Wall.class
+target/classes/org/example/model/enums/LampType.class
